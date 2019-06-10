@@ -1,0 +1,26 @@
+{
+  "name": "cucumber-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run test:cucumber",
+    "test:cucumber": "protractor protractor/cucumber.config.js"
+  },
+  "author": "Miguel Pinzón",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "^12.0.7",
+    "protractor-cucumber-framework": "^6.1.2",
+    "typescript": "^3.5.1"
+  }
+}
