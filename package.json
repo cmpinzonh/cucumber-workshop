@@ -7,7 +7,8 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
     "test": "npm run test:cucumber",
-    "test:cucumber": "protractor protractor/cucumber.config.js"
+    "test:cucumber": "npm run build && protractor protractor/cucumber.config.js",
+    "test:other": "npm run build && protractor dist/protractor/other.config.js"
   },
   "author": "Miguel Pinzón",
   "license": "ISC",
