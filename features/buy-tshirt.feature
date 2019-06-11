@@ -6,5 +6,5 @@ Feature: Pick a shirt
     Scenario: Webstore prodcut Test
         Given I go to "http://automationpractice.com/"
         When I go to t-shirts menu
-        And I add the t-shirt to my cart
+        And I add the t-shirt "Faded Short Sleeve T-shirts" to my cart
         Then I should go to checkout

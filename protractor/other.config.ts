@@ -18,7 +18,7 @@ export const config: Config = {
       require: '../features/step_definitions/**/*.js',
       tags: false,
       profile: false,
-      'no-source': true
+      'no-source': true,
+      format: [require.resolve('cucumber-pretty')]
     }
   };
-  

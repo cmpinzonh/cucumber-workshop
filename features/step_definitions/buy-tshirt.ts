@@ -10,8 +10,8 @@ When('I go to t-shirts menu', async function () {
   await menuContentPage.goToTShirtMenu();
 });
 
-When('I add the t-shirt to my cart', async function () {
-  await addToCartPage.addToCart('Faded Short Sleeve T-shirts');
+When('I add the t-shirt {string} to my cart', async function (tshirt) {
+  await addToCartPage.addToCart(tshirt);
 });
 
 Then('I should go to checkout', async function () {
