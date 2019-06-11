@@ -6,8 +6,9 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
-    "test": "npm run test:cucumber",
-    "test:cucumber": "protractor protractor/cucumber.config.js"
+    "test": "npm run test:other",
+    "test:cucumber": "npm run build && protractor protractor/cucumber.config.js",
+    "test:other": "npm run build && protractor dist/protractor/other.config.js"
   },
   "author": "Miguel Pinzón",
   "license": "ISC",
@@ -15,6 +16,8 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.2",
+    "isomorphic-fetch": "^2.2.1",
     "protractor": "^5.4.2"
   },
   "devDependencies": {
