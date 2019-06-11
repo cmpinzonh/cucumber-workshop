@@ -1,6 +1,6 @@
 const assert = require('assert');
-const { browser } = require('protractor');
-const { Given, When, Then } = require('cucumber');
+import { browser } from 'protractor';
+import { Given, When, Then} from 'cucumber';
 
 Given('I go to {string}', async function (site) {
   await browser.get(site);

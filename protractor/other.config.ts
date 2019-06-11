@@ -3,7 +3,7 @@ import { Config, browser } from 'protractor';
 export const config: Config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
-    specs: ['../features/**/*.feature'],
+    specs: ['../../features/**/*.feature'],
     SELENIUM_PROMISE_MANAGER: false,
     onPrepare: () => {
       browser.ignoreSynchronization = true;
